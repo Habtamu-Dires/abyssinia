@@ -1,0 +1,49 @@
+.header {
+    padding: 10px 0px 10px 0px;
+    margin: 0px auto;
+    background-color: #063541;
+    color: floralwhite;
+    align-items: center;
+}
+
+.header-links{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
+a {
+    color: white;
+    background-color: transparent;
+    text-decoration-line: none;
+}
+
+a:hover {
+    color: rgb(153, 153, 130);
+    text-decoration: none;
+}
+
+.row-register {
+    margin: 50px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 100px;
+}
+.row-programs {
+    margin: 50px auto;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px ridge;
+}
+.row-register-footer {
+    margin: 20px auto;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px ridge;
+}
+
+.footer {
+    background-color: #063541;
+    margin: 20px auto;
+    padding: 20px 0px 20px 0px;
+    color: floralwhite;
+}
