@@ -9,7 +9,7 @@ body {
 .jumbotron {
     padding: 150px 30px 150px 30px;
     margin: 0px auto;
-    background-color: #6ea5b3;
+    background-color: #096177;
     color: floralwhite;
     border-radius: 0px 0px 100px 100px;
 }
@@ -35,19 +35,19 @@ a:hover {
 
 
 .row-programs {
-    margin: 50px auto;
+    margin: 15px auto;
     padding: 10px 0px 10px 0px;
 
 }
 .row-register-footer {
-    margin: 20px auto;
-    padding: 5px 0px 5px 0px;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
     border-bottom: 1px ridge;
 }
 
 .footer {
     background-color: #064757;
-    margin: 20px auto;
+    margin: 0px auto;
     padding: 20px 0px 20px 0px;
     color: floralwhite;
     
@@ -57,4 +57,13 @@ a:hover {
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
    
+}
+.footer-content {
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.copy-right {
+    padding: 20px 0px 5px 0px;
+    border-top: 1px ridge;
 }
