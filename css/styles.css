@@ -1,6 +1,7 @@
 body {
     padding: 50px 0px 0px 0px;
     z-index: 0;
+    font-family: Helvetica, sans-serif;
 }
 
 .navbar-dark{
@@ -15,6 +16,12 @@ body {
     border-radius: 0px 0px 100px 100px;
 }
 
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+.dropdown>.dropdown-toggle:active {
+    pointer-events: none;
+}
 
 .register-header {
     padding: 50px 0px 0px 0px;
@@ -34,7 +41,6 @@ a:hover {
     color: rgb(153, 153, 130);
     text-decoration: none;
 }
-
 
 .row-programs {
     margin: 0px 0px 20px 0px;
