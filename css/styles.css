@@ -16,11 +16,12 @@ body {
     border-radius: 0px 0px 100px 100px;
 }
 
-.dropdown:hover>.dropdown-menu {
+.dropdown:hover .dropdown-menu {
     display: block;
 }
-.dropdown>.dropdown-toggle:active {
-    pointer-events: none;
+
+.dropdown-menu> :hover {
+    background-color: #096177;
 }
 
 .register-header {
@@ -74,4 +75,8 @@ a:hover {
 .copy-right {
     padding: 20px 0px 5px 0px;
     border-top: 1px ridge;
+}
+
+.multi-form-tab {
+    display: none;
 }
