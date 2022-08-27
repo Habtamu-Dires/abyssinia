@@ -19,3 +19,4 @@ function nextPrev(n) {
     //otherwise, display the correct tab
     showTab(currentTab);
 }
+

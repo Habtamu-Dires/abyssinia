@@ -8,12 +8,15 @@
         
         <!-- Bootstrap CSS-->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!--Animate-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <!--icon-fonts-->
         <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
         <link rel="styleshhet" href="node_modules/bootstrap-social/bootstrap-social.css">
         <!-- custom CSS-->
         <link rel="stylesheet" href="css/styles.css">
         <title>Abyssinia Computer</title>
+        
 
     </head>
     <body>
@@ -50,14 +53,63 @@
         </nav>
         
         <header class="jumbotron">
-            <div class="container">
-                <div class="row row-header justify-content-center">
-                    <div>
-                        <a  class="btn btn-info" href="./register.html">Register</a>
-                    </div>
-                </div>  
-            </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">                           
+                            <div id="mycarousel" class="carousel carousel-fade" data-ride="carousel" data-bs-interval="5000">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">                                    
+                                        <div class="carousel-center-text responsive-text">
+                                                <h2 data-animation="animated fadeInDown slower">
+                                                    Welcome to Abyssina Computer Training Center
+                                                </h2>
+                                                <p data-animation="animated fadeInUp slower">The best computer training center in bahir dar</p>
+                                        </div>                                                                                                                          
+                                        <div class="carousel-caption">                                                   
+                                            <a class="btn btn-register justify-self-center" href="./register.html"
+                                            data-animation="animated fadeInUp slower"> Register</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="carousel-center-text responsive-text">
+                                            <h2 data-animation="animated fadeInDown slower">
+                                                More than 10 years of exprinace 
+                                            </h2>                                        
+                                            <p data-animation="animated fadeInUp slower">Exprinaced Teachers and Best Enviroment</p>
+                                        </div>                                    
+                                        <div class="carousel-caption">
+                                            <a class="btn btn-register justify-self-center" href="./register.html" 
+                                               data-animation="animated fadeInUp slower"> Register</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="carousel-center-text responsive-text">
+                                            <h2 data-animation="animated fadeInDown slower">Exceptional Education you want</h2>
+                                            <p data-animation="animated fadeInUp slower">The Attention. You Deserve</p>
+                                        </div>                                
+                                        <div class="carousel-caption">
+                                            <a class="btn btn-register justify-self-center" href="./register.html"
+                                               data-animation="animated fadeInUp slower"> Register</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ol class="carousel-indicators mb-0">
+                                    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                                    <li data-target="#mycarousel" data-slide-to="2"></li>
+                                </ol>
+                                <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+                        </div>                    
+                    </div>    
+                </div>
         </header>
+
         <div class="container">
             <div class="row">
                 <div class="card col-12">
@@ -127,11 +179,9 @@
         <footer class="footer">
             <div class="container">
                 <div class="row row-register-footer justify-content-center">
-                    <div class="col-auto">
-                        <h3><span class="badge badge-pill badge-secondary">
-                                <a href="./register.html">Register Now</a></span>
-                        </h3>
-                    </div>
+                    <a class="btn btn-register justify-self-center"
+                     href="./register.html" > Register</a>
+    
                 </div>
                 <div class="row footer-content">
                     <div class="col-4 col-sm-2">
@@ -174,14 +224,16 @@
                         <p>© Copyright 2022 Abyssinia Computer Training Center</p>
                     </div>
                 </div>
-            </div>
-            
+            </div>            
         </footer>
-    
+
          <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        
+        <script src="./script/script.js"></script>
+    
     </body>
 
 
