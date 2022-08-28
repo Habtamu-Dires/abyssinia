@@ -63,8 +63,12 @@ body {
     display: block;
 }
 
-.dropdown-menu> :hover {
+.nav-item .dropdown-menu> :hover {
     background-color: #096177;
+}
+
+.dropdown-menu {
+    margin: 0px; 
 }
 
 .register-header {
@@ -139,3 +143,75 @@ a:hover {
     font-size: 22px;
 
 }
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey;
+  }
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 10px;
+    width: 25%;
+    position: relative;
+    font-weight: 400;
+    text-align: center;
+  }
+
+/* Icons from fontAwesome */
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007";
+  }
+  
+#progressbar #educational:before {
+    font-family: FontAwesome;
+    content: "\f016";
+}
+  
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+/*Icon ProgressBar before any progress*/
+
+#progressbar li:before {
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    display: block;
+    font-size: 30px;
+    text-align: center;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px;
+}
+
+/*ProgressBar connectors*/
+#progressbar li::after {
+    content: '';
+    width: 150%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: -1;
+    text-align: center;
+  }
+  #progressbar #confirm::after {
+    width: 100%;
+  }
+ 
+#progressbar .active {
+    color: #3ab7a2;
+  } 
+ /*Color number of the step and the connector before it*/
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #3ab7a2;
+} 
+  

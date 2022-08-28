@@ -65,28 +65,21 @@
                  </div>
             </div>
         </header>
-        <div class="container multi-form-tab">
-            <div class="row pt-5 pb-2 justify-content-center">
-                <div class="col-auto">
-                    <h3>Enrollment Information</h3>
-                </div>
-            </div> 
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-6">
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;">
-                            50%
-                        </div>
-                        
+        
+        <div class="container">
+            <div class="row">
+                <form class="col-12 col-md-9">
+                    <!--Progress bar-->
+                    <div class="row mt-4 mb-4">
+                        <ul class="offset-sm-2 col-md-10 d-flex flex-row justify-content-between" id="progressbar">
+                            <li class=" active" id="personal"><strong>&nbsp;Personal<br>Information</strong></li>
+                            <li class="" id="educational"><strong>&nbsp;Program<br>Information</strong></li>
+                            <li class="" id="confirm"><strong>Finish</strong></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            <div class="row p-4">
-                <div class="col-12">
-                    <h3>Personal Information</h3>
-                </div>
-                <div class="col-12 col-md-9">
-                    <form>
+                    
+                    <!--FIRST forms-->
+                    <div class="multi-form-tab">
                         <div class="form-group row">
                             <label for="firstname" class="col-md-2 col-form-label">First Name</label>
                             <div class="col-md-10">
@@ -139,32 +132,10 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            
-        </div>
-        <div class="container multi-form-tab">
-            <div class="row pt-5 pb-2 justify-content-center">
-                <div class="col-auto">
-                    <h3>Enrollment Information</h3>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-12 col-sm-6">
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" style="width: 100%;">
-                            100%
-                        </div>
+
                     </div>
-                </div>
-            </div>
-            <div class="row p-4">
-                <div class="col-12">
-                    <h3>Enrollment Information</h3>
-                </div>
-                <div class="col-12 col-md-9">
-                    <form>
+                    <!--SECOND FORM-->
+                    <div class="multi-form-tab">
                         <div class="form-group row">
                             <label for="program" class="col-md-2 col-form-label">Select Program</label>
                             <div class="col-md-10">
@@ -180,15 +151,102 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="days" class="col-md-2 col-form-label">Select Days</label>
-                            <div class="col-md-10">
-                                 <!--Day selector goes here-->
+                            <label for="days" class="col-md-2 col-form-label" >
+                                Select Days</label>
+                            <div class="col-md-3">
+                                    <!--Day selector goes here-->
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle" data-toggle="dropdown">Select a day</span>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown-item col-md-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="monday"  value="monday">
+                                                    <label class="form-check-label" for="monday"> Monday </label>                                                   
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item col-md-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="tuesday"  value="tuesday">
+                                                    <label class="form-check-label" for="tuesday"> Tuesday </label>                                                                                                            
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item col-md-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="wednesday"  value="wednesday">
+                                                    <label class="form-check-label" for="wednesday"> Wednesday </label>                                                
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item col-md-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="thursday"  value="thursday">
+                                                    <label class="form-check-label" for="thursday"> Thursday </label>                                                                                                            
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item col-md-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="friday"  value="friday">
+                                                    <label class="form-check-label" for="friday"></label> Friday </label>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item col-md-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="saturday"  value="saturday">
+                                                    <label class="form-check-label" for="saturday"> saturday </label>                    
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item col-md-2">
+                                                <div class="form-check">
+                                                    <input type="checkbox" class="form-check-input" id="sunday"  value="sunday">
+                                                    <label class="form-check-label" for="sunday"> Sunday </label>                                                            
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="time" class="col-md-2 col-form-label">Select Time</label>
-                            <div class="col-md-10">
-                                 <!--Time selector goes here-->   
+                            <div class="col-md-3">
+                                <!--Time selector goes here-->
+                                <div class="dropdown">
+                                    <span class="dropdown-toggle" data-toggle="dropdown">Select a Time</span>
+                                    <div class="dropdown-menu">
+                                        <div class="dropdown-item col-md-2">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="Monday"  value="Male">
+                                                <label class="form-check-label" for="Monday">
+                                                    <strong>2 - 6</strong>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item col-md-2">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="Tuesday"  value="Tuesday">
+                                                <label class="form-check-label" for="male">
+                                                    <strong>4 - 6</strong>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item col-md-2">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="Tuesday"  value="Tuesday">
+                                                <label class="form-check-label" for="male">
+                                                    <strong>8 - 11</strong>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown-item col-md-2">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="Tuesday"  value="Tuesday">
+                                                <label class="form-check-label" for="male">
+                                                    <strong>11 - 1</strong>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                    
                             </div>
                         </div>
                         <div class="form-group row">
@@ -214,16 +272,31 @@
                             </div>
                             <div class="col col-sm">
                                 <div class="row">
-                                    <a class="btn btn-success ml-auto" href="#">Send</a>
+                                    <a class="btn btn-success ml-auto" id="sendBtn" onclick="nextPrev(1)">Send</a>
                                 </div>                           
                             </div>
                         </div>
-                    </form>
-                </div>
-            </div>
-            
-        </div>
 
+                    </div>
+                    <!--Third Slide-->
+                    <div class="multi-form-tab offset-sm-2">
+                        <div class="d-flex row">
+                            <h2 class="col-12" style="text-align: center;">Thank You!!!</h2><br>
+                            <h4 class="col-12" style="text-align: center;">You have Successfully Registered </h4>
+                        </div>
+                        <div class="form-group row">
+                            
+                            <div class="col mt-2">
+                                <div class="row justify-content-center">
+                                    <a class="btn btn-success" href="./index.html">Finish</a>
+                                </div>                           
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>    
+                
+        </div>
         
         <footer class="footer">
             <div class="container">
@@ -282,7 +355,7 @@
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <!--javaScript for multi-step-form-->
-        <script src="./script/multi-step-form.js"></script>
+        <script src="./script/script.js"></script>
         
     </body>
 
