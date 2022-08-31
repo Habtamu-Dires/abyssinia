@@ -24,10 +24,20 @@ body {
     background-color: #68A4C4;
 }
 
+.responsive-text>h2{
+    font-size:25px; 
+}
+
+.responsive-text>p {
+    font-size: 15px;
+    z-index: 10;
+}
+
 /* Small devices (landscape phones, 544px and up) */
+/*
 @media (min-width: 244px) {  
     .responsive-text>h2{
-        font-size:25px; /*1rem = 16px*/
+        font-size:25px; 
     }
     .responsive-text>p {
         font-size: 15px;
@@ -35,13 +45,14 @@ body {
     }
     
 }
+*/
+
 @media (min-width: 544px) {  
     .responsive-text>h2{
-        font-size:35px; /*1rem = 16px*/
+        font-size:35px;       
         margin-bottom: 30px;
     }    
 }
-
 
 .navbar-dark{
     background-color: #07404e;
@@ -71,14 +82,16 @@ body {
     margin: 0px; 
 }
 
-.register-header {
+.breadcrumb-container {
     padding: 50px 0px 0px 0px;
     margin: 0px auto;
     background-color: #096177;
 }
+
 .ol {
     background-color: #096177;
 }
+
 a {
     color: white;
     background-color: transparent;
@@ -128,6 +141,9 @@ a:hover {
     display: none;
 }
 
+.multi-form-tab .card{  
+    margin-bottom: 10px;
+}
 
 .carousel-item {
     height: 350px;
@@ -213,5 +229,5 @@ a:hover {
  /*Color number of the step and the connector before it*/
 #progressbar li.active:before, #progressbar li.active:after {
     background: #3ab7a2;
-} 
+}
   

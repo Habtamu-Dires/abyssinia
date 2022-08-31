@@ -9,7 +9,6 @@
         let $this = $(this),
           $animationType = $this.data("animation");
         $this.addClass($animationType).one(animEndEv, function() {
-            console.log("end here ...........")
           $this.removeClass($animationType);
         });
       });
@@ -41,7 +40,8 @@
 function showTab(n) {
     //this function will display the specified tab of the form ...
     let x = document.getElementsByClassName("multi-form-tab");
-    x[n].style.display = "block";
+    if(x[n] !== undefined)
+        x[n].style.display = "block";
 }
 //function to mark progress bar 
 //add active class to bar element

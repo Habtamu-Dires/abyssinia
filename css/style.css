@@ -1,0 +1,205 @@
+body {
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar-dark {
+  background-color: #07404e;
+}
+.navbar-dark .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.navbar-dark .dropdown-menu {
+  margin: 0px;
+}
+.navbar-dark .dropdown-menu .dropdown-item:hover {
+  background-color: #07404e;
+}
+
+.jumbotron {
+  background: linear-gradient(to right, rgba(6, 58, 78, 0.7), rgba(9, 74, 90, 0.7)), url("../img/bdr.png") no-repeat fixed;
+  background-size: cover;
+  margin: 0px auto;
+  color: floralwhite;
+  border-radius: 0px 0px 100px 100px;
+  overflow: hidden;
+}
+.jumbotron .carousel .carousel-item {
+  height: 350px;
+  position: relative;
+}
+.jumbotron .carousel .carousel-item .carousel-center-text {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+}
+.jumbotron .carousel .carousel-item .responsive-text h2 {
+  font-size: 25px;
+}
+@media (min-width: 544px) {
+  .jumbotron .carousel .carousel-item .responsive-text h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+}
+.jumbotron .carousel .carousel-item .responsive-text p {
+  font-size: 15px;
+  z-index: 10;
+}
+@media (min-width: 544px) {
+  .jumbotron .carousel .carousel-item .responsive-text p {
+    z-index: auto;
+  }
+}
+
+.btn-register {
+  color: rgb(232, 230, 227);
+  border-color: rgb(46, 94, 119);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  line-height: 1;
+  margin: 10px;
+  border: 2px solid #68A4C4;
+}
+
+.btn-register:hover {
+  background-color: #68A4C4;
+}
+
+.row-programs {
+  margin: 0px 0px 20px 0px;
+  padding: 10px 0px 10px 0px;
+  min-height: 400px;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+}
+
+.breadcrumb-container {
+  padding: 50px 0px 0px 0px;
+  margin: 0px auto;
+  background-color: #096177;
+}
+.breadcrumb-container .ol {
+  background-color: #096177;
+}
+.breadcrumb-container a {
+  color: white;
+  background-color: transparent;
+  text-decoration-line: none;
+}
+.breadcrumb-container a:hover {
+  color: rgb(153, 153, 130);
+  text-decoration: none;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+  /* Icons from fontAwesome */
+  /*ProgressBar connectors*/
+  /*Color number of the step and the connector before and after it*/
+}
+#progressbar li {
+  list-style-type: none;
+  font-size: 10px;
+  width: 25%;
+  position: relative;
+  font-weight: 400;
+  text-align: center;
+}
+#progressbar li:before {
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  display: block;
+  font-size: 30px;
+  text-align: center;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 2px;
+}
+#progressbar #personal:before {
+  font-family: FontAwesome;
+  content: "\f007";
+}
+#progressbar #educational:before {
+  font-family: FontAwesome;
+  content: "\f016";
+}
+#progressbar #confirm:before {
+  font-family: FontAwesome;
+  content: "\f00c";
+}
+#progressbar li::after {
+  content: "";
+  width: 150%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: -1;
+  text-align: center;
+}
+#progressbar #confirm::after {
+  width: 100%;
+}
+#progressbar .active {
+  color: #3ab7a2;
+}
+#progressbar li.active:before, #progressbar li.active:after {
+  background: #3ab7a2;
+}
+
+.multi-form-tab {
+  display: none;
+}
+.multi-form-tab .card {
+  margin-bottom: 10px;
+}
+.multi-form-tab .dropdown-menu {
+  margin: 0px;
+}
+
+.footer {
+  background-color: #07404e;
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+  color: floralwhite;
+}
+.footer .row-register-footer {
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+  border-bottom: 1px ridge;
+}
+.footer .footer-content {
+  margin: 0px auto;
+  padding: 20px 0px 20px 0px;
+}
+.footer .footer-content a {
+  color: white;
+  background-color: transparent;
+  text-decoration-line: none;
+}
+.footer .footer-content a:hover {
+  color: rgb(153, 153, 130);
+  text-decoration: none;
+}
+.footer .copy-right {
+  padding: 20px 0px 5px 0px;
+  border-top: 1px ridge;
+}
